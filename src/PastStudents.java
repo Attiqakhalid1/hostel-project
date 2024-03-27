@@ -28,7 +28,7 @@ public class PastStudents extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        pastStudentsTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -37,7 +37,7 @@ public class PastStudents extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/exit.png"))); // NOI18N
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 90, 60));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        pastStudentsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null},
@@ -48,7 +48,7 @@ public class PastStudents extends javax.swing.JFrame {
                 "Name", "Mobile Number", "Father Name", "Mother Name", "Emaill", "Address", "University", "CNIC", "Room Number"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(pastStudentsTable);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 700, 100));
 
@@ -98,6 +98,6 @@ public class PastStudents extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable pastStudentsTable;
     // End of variables declaration//GEN-END:variables
 }

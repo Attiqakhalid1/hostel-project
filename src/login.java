@@ -29,12 +29,12 @@ public class login extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        loginButton = new javax.swing.JButton();
+        goToSignupButton = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        userNameLogin = new javax.swing.JTextField();
+        passwodLogin = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -45,25 +45,25 @@ public class login extends javax.swing.JFrame {
         setIconImages(null);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 204));
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton3.setText("Log In");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        loginButton.setBackground(new java.awt.Color(255, 255, 204));
+        loginButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        loginButton.setText("Log In");
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                loginButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 260, 80, -1));
+        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 260, 80, -1));
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 204));
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton4.setText("Sign Up");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        goToSignupButton.setBackground(new java.awt.Color(255, 255, 204));
+        goToSignupButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        goToSignupButton.setText("Sign Up");
+        goToSignupButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                goToSignupButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, -1, -1));
+        getContentPane().add(goToSignupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setText("Username");
@@ -72,14 +72,14 @@ public class login extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel6.setText("Welcome to DK Girls Hostel");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, -1, 30));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, 140, 20));
+        getContentPane().add(userNameLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, 140, 20));
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        passwodLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                passwodLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 140, 20));
+        getContentPane().add(passwodLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 140, 20));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setText("Password");
@@ -93,17 +93,17 @@ public class login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void goToSignupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goToSignupButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_goToSignupButtonActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void passwodLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwodLoginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_passwodLoginActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_loginButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,16 +141,16 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton goToSignupButton;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JButton loginButton;
+    private javax.swing.JTextField passwodLogin;
+    private javax.swing.JTextField userNameLogin;
     // End of variables declaration//GEN-END:variables
 }

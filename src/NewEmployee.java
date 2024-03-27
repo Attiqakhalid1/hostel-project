@@ -33,16 +33,16 @@ public class NewEmployee extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        nameEmployee = new javax.swing.JTextField();
+        numberEmployee = new javax.swing.JTextField();
+        emailEmployee = new javax.swing.JTextField();
+        fatherNameEmployee = new javax.swing.JTextField();
+        addressEmployee = new javax.swing.JTextField();
+        motherNameEmployee = new javax.swing.JTextField();
+        designationEmployee = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        newEmployeeSaveButton = new javax.swing.JButton();
+        newEmployeeClearButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -68,32 +68,32 @@ public class NewEmployee extends javax.swing.JFrame {
 
         jLabel8.setText("Designation");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 80, 30));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 220, 30));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 220, 30));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 220, 30));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 220, 30));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, 220, 30));
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 220, 30));
+        getContentPane().add(nameEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 220, 30));
+        getContentPane().add(numberEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 220, 30));
+        getContentPane().add(emailEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 220, 30));
+        getContentPane().add(fatherNameEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 220, 30));
+        getContentPane().add(addressEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, 220, 30));
+        getContentPane().add(motherNameEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 220, 30));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cleaner", "Cook", "Security Guard" }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 220, 30));
+        designationEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cleaner", "Cook", "Security Guard" }));
+        getContentPane().add(designationEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 220, 30));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/exit.png"))); // NOI18N
         jButton2.setText("EXIT");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, 130, 60));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/save.png"))); // NOI18N
-        jButton3.setText("Save");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 90, 30));
+        newEmployeeSaveButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/save.png"))); // NOI18N
+        newEmployeeSaveButton.setText("Save");
+        getContentPane().add(newEmployeeSaveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 90, 30));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clear.png"))); // NOI18N
-        jButton4.setText("Clear");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, 90, 30));
+        newEmployeeClearButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clear.png"))); // NOI18N
+        newEmployeeClearButton.setText("Clear");
+        getContentPane().add(newEmployeeClearButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, 90, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.png"))); // NOI18N
         jLabel1.setText("Name");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 520));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -134,10 +134,11 @@ public class NewEmployee extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField addressEmployee;
+    private javax.swing.JComboBox<String> designationEmployee;
+    private javax.swing.JTextField emailEmployee;
+    private javax.swing.JTextField fatherNameEmployee;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -146,11 +147,10 @@ public class NewEmployee extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField motherNameEmployee;
+    private javax.swing.JTextField nameEmployee;
+    private javax.swing.JButton newEmployeeClearButton;
+    private javax.swing.JButton newEmployeeSaveButton;
+    private javax.swing.JTextField numberEmployee;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,11 +32,11 @@ public class sign_up extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        passwordSignup = new javax.swing.JTextField();
+        signupButton = new javax.swing.JButton();
+        email = new javax.swing.JTextField();
+        lastName = new javax.swing.JTextField();
+        firstName = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,31 +58,31 @@ public class sign_up extends javax.swing.JFrame {
         jLabel4.setText("Password");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, -1, -1));
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        passwordSignup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                passwordSignupActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 160, 20));
+        getContentPane().add(passwordSignup, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 160, 20));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 204));
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton1.setText("Sign Up");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        signupButton.setBackground(new java.awt.Color(255, 255, 204));
+        signupButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        signupButton.setText("Sign Up");
+        signupButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                signupButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, -1, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, 160, 20));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 160, 20));
+        getContentPane().add(signupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, -1, -1));
+        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, 160, 20));
+        getContentPane().add(lastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 160, 20));
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        firstName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                firstNameActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, 160, 20));
+        getContentPane().add(firstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, 160, 20));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/png.jpg"))); // NOI18N
@@ -91,17 +91,17 @@ public class sign_up extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void passwordSignupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordSignupActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_passwordSignupActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void signupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_signupButtonActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void firstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_firstNameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,7 +139,8 @@ public class sign_up extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField email;
+    private javax.swing.JTextField firstName;
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JColorChooser jColorChooser2;
     private javax.swing.JLabel jLabel1;
@@ -147,9 +148,8 @@ public class sign_up extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField lastName;
+    private javax.swing.JTextField passwordSignup;
+    private javax.swing.JButton signupButton;
     // End of variables declaration//GEN-END:variables
 }

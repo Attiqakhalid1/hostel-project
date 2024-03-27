@@ -34,18 +34,18 @@ public class StudentFee extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        amountFee = new javax.swing.JTextField();
+        nameFee = new javax.swing.JTextField();
+        emailFee = new javax.swing.JTextField();
+        numberFee = new javax.swing.JTextField();
+        roomFee = new javax.swing.JTextField();
+        monthFee = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        saveFeeButton = new javax.swing.JButton();
+        clearFeeButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        feeTable = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
@@ -78,47 +78,47 @@ public class StudentFee extends javax.swing.JFrame {
         jLabel8.setPreferredSize(new java.awt.Dimension(747, 700));
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, 30));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        amountFee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                amountFeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 310, 30));
+        jPanel1.add(amountFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 310, 30));
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        nameFee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                nameFeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 310, 30));
+        jPanel1.add(nameFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 310, 30));
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        emailFee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                emailFeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 310, 30));
+        jPanel1.add(emailFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 310, 30));
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        numberFee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                numberFeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 310, 30));
+        jPanel1.add(numberFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 310, 30));
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        roomFee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                roomFeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 310, 30));
+        jPanel1.add(roomFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 310, 30));
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        monthFee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                monthFeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 310, 30));
+        jPanel1.add(monthFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 310, 30));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/search.png"))); // NOI18N
         jButton1.setText("Search");
@@ -129,15 +129,15 @@ public class StudentFee extends javax.swing.JFrame {
         jButton2.setText("EXIT");
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 10, 130, 60));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/save.png"))); // NOI18N
-        jButton3.setText("Save");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 90, 30));
+        saveFeeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/save.png"))); // NOI18N
+        saveFeeButton.setText("Save");
+        jPanel1.add(saveFeeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 90, 30));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clear.png"))); // NOI18N
-        jButton4.setText("Clear");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 90, 30));
+        clearFeeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clear.png"))); // NOI18N
+        clearFeeButton.setText("Clear");
+        jPanel1.add(clearFeeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 90, 30));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        feeTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -148,7 +148,7 @@ public class StudentFee extends javax.swing.JFrame {
                 "Month ", "Amount"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(feeTable);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 520, 100));
 
@@ -164,29 +164,29 @@ public class StudentFee extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void amountFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountFeeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_amountFeeActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void nameFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameFeeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_nameFeeActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void emailFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFeeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_emailFeeActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void numberFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numberFeeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_numberFeeActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void roomFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roomFeeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_roomFeeActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void monthFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monthFeeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_monthFeeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -224,10 +224,12 @@ public class StudentFee extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField amountFee;
+    private javax.swing.JButton clearFeeButton;
+    private javax.swing.JTextField emailFee;
+    private javax.swing.JTable feeTable;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -238,12 +240,10 @@ public class StudentFee extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField monthFee;
+    private javax.swing.JTextField nameFee;
+    private javax.swing.JTextField numberFee;
+    private javax.swing.JTextField roomFee;
+    private javax.swing.JButton saveFeeButton;
     // End of variables declaration//GEN-END:variables
 }
